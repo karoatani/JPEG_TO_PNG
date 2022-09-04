@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import sys
 import os
 from PIL import Image
@@ -16,7 +17,7 @@ def convert_image_to_png(path_to_get_image, path_to_store_image):
             os.mkdir(path)
 
         path = os.path.join(path, image_file.split('.')[0] + '.'+'png')
-        im.save(path, 'PNG')
+        im.save(path, 'png')
 
 
 convert_image_to_png(sys.argv[1], sys.argv[2])
